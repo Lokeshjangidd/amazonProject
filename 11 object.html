@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object </title>
+</head>
+
+<body>
+
+    <H2> we can create a function in object and </H2>
+    <H2> console</H2>
+    <H2> Math</H2>
+    <H2>JSON- this is univarsel</H2>
+    <H2>localStorage all are defult create by javascript Objects </H2>
+
+    <p>we can saved object as objectName.property = lokesh</p>
+    <button onclick="localStorageone() ">localStorage</button>
+    <button onclick="show()">show</button>
+    <script>
+        const person = {
+            name: "lokesh", // we want write strings in double cot ""
+            age: 28 + "  years",
+            DOB: 2003,
+            place: 'khiriya',
+        }; console.log(person)
+        console.log(person.name + ' ' + person.place);
+
+        /* we can create a function in object and 
+         console
+        Math
+        JSON- this is univarsel
+        localStorage all are defult create by javascript Objects */
+
+        const personone = {
+            name: "satish",
+            rating: {
+                stars: 4.5,
+                count: 87
+            }
+        };
+        console.log(personone.rating)
+
+        // we can create a function in object
+
+        const fun = {
+            funName: function functionName() {
+                console.log('functionRun')
+            }
+        }
+        console.log(fun.funName()) // First method for function
+        fun.funName() // second method method and this is correct
+        console.log(typeof fun.funName)  // typeof function
+
+
+
+        // JSON object 
+        // JSON is double cot 
+
+        // javascript convert to JSON formate 
+        // JSON.stringify(*name*)
+
+        console.log(JSON.stringify(personone))
+        /* ans is 
+        {
+            "name":"satish",
+        "rating":
+        {"stars":4.5,"count":87}
+        } 
+        */
+
+        // convert to JSON in javascript
+
+        const jsonString = JSON.stringify(personone); // convert to json
+        console.log(JSON.parse(jsonString)); // convert to javascript
+
+
+
+        // ** localStorage **
+        // localStorage only support JSON or strings 
+
+        let clickTimes = 0;
+        function localStorageone() {
+            clickTimes += 1;
+            console.log(`click + ${clickTimes}`);
+        }
+        function show() {
+            console.log(clickTimes);
+        }
+
+        // let count = clickTimes;
+        // localStorage.setItem("count", JSON.stringify(count));
+
+        // localStorage.getItem('count');
+        // JSON.parse(localStorage.getItem('count'));
+
+        let one = prompt("enter name");
+        let three = prompt("enter class");
+        // prompt use 
+        console.log(one);
+        localStorage.setItem('two', 'one');
+        //  console.log(`The name is ${one}`)
+    </script>
+</body>
+
+</html>

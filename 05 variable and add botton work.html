@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>short hand </h2>
+<P>  cartq = cartq +1;
+</P>
+<p>short :- cartq += 1; </p>
+<p id="five"></p>
+    <button 
+   onclick=" console.log(`Cart Quantity: ${ cartq } `)"
+   >Show Quantity </button> 
+
+   <button 
+   onclick="
+//    cartq = cartq +1;
+   cartq += 1;  // or use cartq++
+   console.log(`Cart Quantity: ${ cartq }`)
+   "
+   > Add to Cart</button> 
+   
+   <button 
+   onclick=" cartq = cartq + 2;
+   console.log(`lokesh : ${ cartq }` )
+   "
+   > +2 </button> 
+
+   <button 
+   onclick=" cartq = cartq + 3;
+   console.log(` Cart Quantity: ${ cartq}`)";
+   >+3 </button> 
+
+<button 
+onclick="
+cartq= cartq + 4;
+console.log(`Cart Qty: ${ cartq} `)
+"
+>
++4
+</button>
+
+
+
+
+   
+
+   <button 
+   onclick=" cartq= 0;
+   console.log(`Your Cart Is Reset \n Cart Quantity: ${cartq}` )"
+   >  reset Cart</button> 
+
+   <script>
+let cartq = 0;
+   </script>
+
+</body>
+</html>

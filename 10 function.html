@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Function</title>
+</head>
+
+<body>
+    Function
+
+    <script>
+        console.log('hi lokesh');
+        console.log('google');
+
+        function lokesh(name) {
+            console.log((name + 1) * 0.1)
+        }
+        lokesh(5);
+
+        function carTax(shift, tata) {
+            console.log(shift * 0.5);
+            console.log(`Your const : ${tata * 0.1}`);
+        }
+        carTax(5, 50);
+
+        // default value set me function 
+
+        function carTax(cost, textperesent = 2) {
+            console.log(textperesent * cost)
+        }
+        carTax(5, 10)
+        carTax(5)
+    </script>
+</body>
+
+</html>

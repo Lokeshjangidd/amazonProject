@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>GAME START</h2>
+    <button onclick="rock()">rock</button>
+    <button onclick="paper()">paper</button>
+    <button onclick="scissors()">scissors</button>
+</body>
+<script>
+    function rock() {
+        const computerMove = Math.random();
+        console.log(computerMove);
+        let move = 'rock';
+        if (computerMove >= 0 && computerMove < 1 / 3) {
+            result = 'rock';
+            resultone = 'Tie' ;
+            //  alert(result)
+        }
+
+        else if (computerMove >= 1 / 3 && computerMove < 2 / 3) {
+            resultone = 'win';
+
+            result = 'paper';
+            //  alert(result)
+        }
+
+        else if (computerMove >= 2 / 3 && computerMove < 1) {
+            resultone = 'loose';
+            result = 'scissors';
+            //  alert(result)
+        }
+
+        alert(`your move is ${move} and computer choose  ${result} and you ${resultone}`)
+
+    }
+    function paper() {
+        const computerMove = Math.random();
+        console.log(computerMove);
+        let move = 'paper';
+        if (computerMove >= 0 && computerMove < 1 / 3) {
+            result = 'rock';
+            resultone = 'loose' ;
+            //  alert(result)
+        }
+
+        else if (computerMove >= 1 / 3 && computerMove < 2 / 3) {
+            resultone = 'Tie';
+
+            result = 'paper';
+            //  alert(result)
+        }
+
+        else if (computerMove >= 2 / 3 && computerMove < 1) {
+            resultone = 'win';
+            result = 'scissors';
+            //  alert(result)
+        }
+
+        alert(`your move is ${move} and computer choose  ${result} and you ${resultone}`)
+
+    }
+    function scissors() {
+        const computerMove = Math.random();
+        console.log(computerMove);
+        let move = 'rock';
+        if (computerMove >= 0 && computerMove < 1 / 3) {
+            result = 'rock';
+            resultone = 'win' ;
+            //  alert(result)
+        }
+
+        else if (computerMove >= 1 / 3 && computerMove < 2 / 3) {
+            resultone = 'loose';
+
+            result = 'paper';
+            //  alert(result)
+        }
+
+        else if (computerMove >= 2 / 3 && computerMove < 1) {
+            resultone = 'Tie';
+            result = 'scissors';
+            //  alert(result)
+        }
+
+        alert(`your move is ${move} and computer choose  ${result} and you ${resultone}`)
+
+    }
+</script>
+
+</html>

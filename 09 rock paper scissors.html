@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+
+<body>
+    <h1> Game Start</h1>
+    <button type="button" onclick="
+const computerMove = Math.random();
+// console.log(computerMove)
+ computerMoveo = '';
+
+if ( computerMove >= 0 && computerMove < 1/3 ) {
+    computerMoveo = 'rock';
+} else if ( computerMove >= 1/3 && computerMove < 2/3 ) { computerMoveo = 'paper';}
+else if( computerMove >= 2/3 && computerMove < 1 ) { computerMoveo = 'scissors'; }
+
+
+console.log(computerMoveo);
+
+let result = '';
+
+if ( computerMoveo === 'rock'){
+    result = 'Tie.'
+} else if ( computerMoveo === 'paper') { result = ' You lose'} else if ( computerMoveo === 'scissors') { result = 'You win.'}
+
+alert(`You choose rock.  computer move ${computerMoveo} . ${ result}`)
+
+    ">Rock</button>
+    <button type="button" onclick="
+    const computerMove = Math.random();
+    // console.log(computerMove)
+     computerMoveo = '';
+    
+    if ( computerMove >= 0 && computerMove < 1/3 ) {
+        computerMoveo = 'rock';
+    } else if ( computerMove >= 1/3 && computerMove < 2/3 ) { computerMoveo = 'paper';}
+    else if( computerMove >= 2/3 && computerMove < 1 ) { computerMoveo = 'scissors'; }
+    
+    
+    console.log(computerMoveo);
+    
+    let result = '';
+    
+    if ( computerMoveo === 'rock'){
+        result = 'Tie.'
+    } else if ( computerMoveo === 'paper') { result = ' You lose'} else if ( computerMoveo === 'scissors') { result = 'You win.'}
+    
+    alert(`You choose rock.  computer move ${computerMoveo} . ${ result}`)
+    
+        ">Paper</button>
+    <button type="button" onclick="
+    const computerMove = Math.random();
+    // console.log(computerMove)
+     computerMoveo = '';
+    
+    if ( computerMove >= 0 && computerMove < 1/3 ) {
+        computerMoveo = 'rock';
+    } else if ( computerMove >= 1/3 && computerMove < 2/3 ) { computerMoveo = 'paper';}
+    else if( computerMove >= 2/3 && computerMove < 1 ) { computerMoveo = 'scissors'; }
+    
+    
+    console.log(computerMoveo);
+    
+    let result = '';
+    
+    if ( computerMoveo === 'rock'){
+        result = 'Tie.'
+    } else if ( computerMoveo === 'paper') { result = ' You lose'} else if ( computerMoveo === 'scissors') { result = 'You win.'}
+    
+    alert(`You choose rock.  computer move ${computerMoveo} . ${ result}`)
+    
+        ">Scissors</button>
+</body>
+
+</html>
